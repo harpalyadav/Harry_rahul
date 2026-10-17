@@ -20,7 +20,7 @@ public class NewTest {
 	  driver.manage().timeouts().pageLoadTimeout(java.time.Duration.ofSeconds(10));
 	  driver.getTitle();
 	  driver.findElement(By.name("q")).sendKeys("Rahul Shetty Academy");
-	  //driver.findElement(By.name("q")).sendKeys("");
+	  driver.findElement(By.name("q")).sendKeys("");
 	  //driver.findElement(By.xpath("//h3[text()='Rahul Shetty Academy - YouTube']")).submit();
   }
 }
