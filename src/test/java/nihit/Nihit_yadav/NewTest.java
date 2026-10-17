@@ -11,7 +11,8 @@ public class NewTest {
 	WebDriver driver;
   @Test
   public void openbrowser() {
-	  WebDriverManager.chromedriver().setup();
+	  //WebDriverManager.chromedriver().setup();
+	  System.setProperty("webdriver.chrome.driver", "C:\\chromedriver-win64\\chromedriver.exe");
 	  driver = new ChromeDriver();
 	  driver.get("https://www.google.com/");
 	  driver.manage().window().maximize();
