@@ -24,7 +24,6 @@ public class NewTest {
 	  driver.get("https://www.google.com/");
 	  Thread.sleep(10000);
 	  driver.manage().window().maximize();
-	  Thread.sleep(10000);
 	  driver.manage().deleteAllCookies();
 	  driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
 	  driver.manage().timeouts().pageLoadTimeout(java.time.Duration.ofSeconds(10));
