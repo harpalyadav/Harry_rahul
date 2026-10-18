@@ -11,6 +11,12 @@ public class NewTest {
 	WebDriver driver;
   @Test
   public void openbrowser() {
+	  try {
+		Thread.sleep(10000);
+	  } catch (InterruptedException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	  }
 	  //WebDriverManager.chromedriver().setup();
 	  System.setProperty("webdriver.chrome.driver", "C:\\chromedriver-win64\\chromedriver.exe");
 	  driver = new ChromeDriver();
