@@ -10,7 +10,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class NewTest {
 	WebDriver driver;
   @Test
-  public void openbrowser() {
+  public void openbrowser() throws InterruptedException {
 	  try {
 		Thread.sleep(10000);
 	  } catch (InterruptedException e) {
@@ -20,8 +20,11 @@ public class NewTest {
 	  //WebDriverManager.chromedriver().setup();
 	  System.setProperty("webdriver.chrome.driver", "C:\\chromedriver-win64\\chromedriver.exe");
 	  driver = new ChromeDriver();
+	  Thread.sleep(10000);
 	  driver.get("https://www.google.com/");
+	  Thread.sleep(10000);
 	  driver.manage().window().maximize();
+	  Thread.sleep(10000);
 	  driver.manage().deleteAllCookies();
 	  driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
 	  driver.manage().timeouts().pageLoadTimeout(java.time.Duration.ofSeconds(10));
