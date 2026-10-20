@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="nihit.Nihit_yadav.NewTest">
+      <class name="nihit.Nihit_yadav.DataProviderExcel">
         <methods>
-          <include name="openbrowser"/>
+          <include name="testCaseData"/>
         </methods>
-      </class> <!-- nihit.Nihit_yadav.NewTest -->
+      </class> <!-- nihit.Nihit_yadav.DataProviderExcel -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
