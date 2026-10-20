@@ -1,7 +1,5 @@
 package nihit.Nihit_yadav;
 
-
-
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -21,12 +19,12 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
-public class UploadDownload {
+public class DownloadAndUpdateExcel {
 
 	public static void main(String[] args) throws IOException {
 
 		String fruitName = "Apple";
-		String updatedValue = "599";
+		String updatedValue = "600";
 
 		// Chrome saves the downloaded file in your Downloads folder by default
 		String filePath = "C:\\Users\\HARSH\\Downloads\\download.xlsx";
