@@ -11,16 +11,9 @@ public class NewTest {
 	WebDriver driver;
   @Test
   public void openbrowser() throws InterruptedException {
-	  try {
-		Thread.sleep(10000);
-	  } catch (InterruptedException e) {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
-	  }
 	  //WebDriverManager.chromedriver().setup();
 	  System.setProperty("webdriver.chrome.driver", "C:\\chromedriver-win64\\chromedriver.exe");
 	  driver = new ChromeDriver();
-	  Thread.sleep(10000);
 	  driver.get("https://www.google.com/");
 	  Thread.sleep(10000);
 	  driver.manage().window().maximize();
