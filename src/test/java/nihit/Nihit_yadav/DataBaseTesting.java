@@ -21,13 +21,13 @@ public class DataBaseTesting {
 		String port = "root";
 		driver = new ChromeDriver();
 		driver.get("https://www.google.com/");
-		Connection cn = DriverManager.getConnection(url, username, port);
-		Statement st = cn.createStatement();
-		ResultSet = st.executeQuery(""); // add sql query for fetching data from database
+		Connection cn = DriverManager.getConnection(url, username, port); 
+		Statement st = cn.createStatement(); 
+		ResultSet = st.executeQuery("select * from Employeeinfoneew where scenario='zerobalancecared'"); // add sql query for fetching data from database
 
 		while (ResultSet.next()) {
-			System.out.println(ResultSet.getString("Username"));
-			System.out.println(ResultSet.getString("Password"));
+			System.out.println(ResultSet.getString("username"));
+			System.out.println(ResultSet.getString("password"));
 		}
 
 	}
