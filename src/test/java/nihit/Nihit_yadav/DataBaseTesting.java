@@ -21,7 +21,7 @@ public class DataBaseTesting {
 		String username = "root";
 		String port = "root";
 		driver = new ChromeDriver();
-		
+		//download and add mysql connector jar file in the project
 		Connection cn = DriverManager.getConnection(url, username, port); 
 		Statement st = cn.createStatement(); 
 		ResultSet = st.executeQuery("select * from Employeeinfoneew where scenario='zerobalancecared'"); // add sql query for fetching data from database
